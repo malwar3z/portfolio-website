@@ -1,0 +1,67 @@
+@import "styles/colors.scss";
+
+.am-navbar {
+    // FLEX CONTAINER
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0 1em 0;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    transition: top 0.6s;
+    width: 100%;
+    background-color: $primary-dark;
+    // transform: translateY(60px);
+
+    &__option-container {
+        display: flex;
+    }
+
+    &__option {
+        margin: 0 2em 0 2em;
+
+        @media screen and (max-width: 960px) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        color: $tertiary-light;
+        margin: 0 2em 0 2em;
+    }
+
+    &__quick-menu {
+        margin: 0 2em 0 2em;
+        display: none;
+        color: $tertiary-light;
+
+        @media screen and (max-width: 960px) {
+            display: block;
+        }
+    }
+
+    &--hidden {
+        top: -100px;
+    }
+
+    // &--active {
+    //     // background-color: $primary-light;
+    //     // backdrop-filter: invert(.7);
+    //     backdrop-filter: blur(15px);
+    //     transition: 1s;
+    //     // border-bottom: 1px solid $primary-light;
+    // }
+}
+
+.am-navbar::after {
+    border-bottom: solid 3px #019fb6;
+    transform: scaleX(1);
+    transition: transform 250ms ease-in-out;
+}
+
+.nav-option-text {}
+
+.nav-option-number {
+    font-size: 0.6em;
+    color: $tertiary-light;
+}

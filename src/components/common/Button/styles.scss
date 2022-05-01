@@ -1,0 +1,46 @@
+@import 'styles/colors.scss';
+
+.am-button-1 {
+    color: $secondary-light;
+    //text-shadow: 1px 1px 2px $primary-light, 0 0 0.6em $secondary-light, 0 0 0.2em $secondary-light;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    transition: 0.3s;
+
+    &:hover {
+        color: $primary-light;
+        // transform: translateY(-2px);
+        // transform: scale(1.2);
+        // cursor: pointer;
+    }
+
+    &:active {
+        transform: scale(1.2);
+    }
+}
+
+.am-button-2 {
+    color: $tertiary-light;
+    //text-shadow: 1px 1px 2px $primary-light, 0 0 0.6em $secondary-light, 0 0 0.2em $secondary-light;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    transition: 0.3s;
+    border: 1px solid $tertiary-light;
+    border-radius: 5px;
+
+    &:hover {
+        color: $primary-light;
+        background-color: $tertiary-light;
+        // transform: translateY(-2px);
+        // transform: scale(1.2);
+        // cursor: pointer;
+    }
+
+    &:active {
+        transform: scale(1.2);
+    }
+}

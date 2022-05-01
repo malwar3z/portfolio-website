@@ -1,0 +1,28 @@
+@import 'styles/colors.scss';
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.am-page {
+    background-color: $primary-dark;
+    height: 100vh;
+    max-height: 1100px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.am-page:nth-child(even) {
+    background-color: $secondary-dark;
+}
+
+.am-page-wrapper {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    width: calc(100% - 100px);
+    color: #fff;
+}

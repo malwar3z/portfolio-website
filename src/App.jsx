@@ -1,5 +1,12 @@
+/* eslint-disable import/no-unresolved */
+import NavBar from 'components/common/NavBar';
+import SideNavBar from 'components/common/SideNavBar';
+import About from 'components/pages/About';
+import Career from 'components/pages/Career';
+import Contact from 'components/pages/Contact';
+import Projects from 'components/pages/Projects';
 import React from 'react';
-import Home from './views/Home';
+import './styles/global.scss';
 
 function App() {
   // useEffect(() => {
@@ -8,7 +15,12 @@ function App() {
 
   return (
     <div>
-      <Home />
+      <NavBar />
+      <SideNavBar />
+      <About />
+      <Career />
+      <Projects />
+      <Contact />
     </div>
   );
 }
