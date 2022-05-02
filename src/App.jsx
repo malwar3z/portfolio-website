@@ -5,18 +5,20 @@ import About from 'components/pages/About';
 import Career from 'components/pages/Career';
 import Contact from 'components/pages/Contact';
 import Projects from 'components/pages/Projects';
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/global.scss';
 
 function App() {
-  // useEffect(() => {
-  //   document.title = "Alvarez Matias"
-  // },[]);
+  const [showSideBar, setShowSideBar] = useState(false);
+
+  const sideHandler = () => {
+    setShowSideBar(!showSideBar);
+  };
 
   return (
     <div>
-      <NavBar />
-      <SideNavBar />
+      <NavBar sideBarHandler={sideHandler} />
+      <SideNavBar show={showSideBar} sideBarHandler={sideHandler} />
       <About />
       <Career />
       <Projects />

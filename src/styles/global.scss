@@ -5,7 +5,7 @@
 }
 
 .am-page {
-    background-color: $primary-dark;
+    background-color: $secondary-dark;
     height: 100vh;
     max-height: 1100px;
     position: relative;
@@ -14,7 +14,7 @@
 }
 
 .am-page:nth-child(even) {
-    background-color: $secondary-dark;
+    background-color: $primary-dark;
 }
 
 .am-page-wrapper {

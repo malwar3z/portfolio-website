@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
-import ApiIcon from '@mui/icons-material/Api';
+import BrightnessAutoIcon from '@mui/icons-material/BrightnessAuto';
 import './styles.scss';
 import Button from '../Button';
 
-function NavBar() {
+function NavBar({ sideBarHandler }) {
   const [showBlackNavbar, setShowBlackNavbar] = useState(false);
 
   const handleScrollChange = () => {
@@ -30,7 +32,7 @@ function NavBar() {
   return (
     <div className={showBlackNavbar ? 'am-navbar am-navbar--hidden' : 'am-navbar'}>
       <div className="am-navbar__logo">
-        <ApiIcon />
+        <BrightnessAutoIcon />
         {/* <Button handler={() => console.log('logo')}>
           <ApiIcon />
         </Button> */}
@@ -75,7 +77,7 @@ function NavBar() {
         </div>
       </div>
       <div className="am-navbar__quick-menu">
-        <Button handler={() => { console.log('ciao'); }}>
+        <Button type={2} handler={() => { sideBarHandler(); }}>
           <MenuIcon />
         </Button>
       </div>

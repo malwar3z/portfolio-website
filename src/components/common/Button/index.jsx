@@ -25,6 +25,8 @@ function Button(props) {
       className={getClass()}
       onClick={handler}
       type="button"
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...props}
     >
       {children}
     </button>

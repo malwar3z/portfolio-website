@@ -27,7 +27,11 @@
 
     &__logo {
         color: $tertiary-light;
-        margin: 0 2em 0 2em;
+        margin-left: 1em;
+        
+        > svg {
+            font-size: 32px;
+        }
     }
 
     &__quick-menu {
