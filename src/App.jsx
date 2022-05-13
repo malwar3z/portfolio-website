@@ -3,7 +3,7 @@ import NavBar from 'components/common/NavBar';
 import SideNavBar from 'components/common/SideNavBar';
 import About from 'components/pages/About';
 import Career from 'components/pages/Career';
-import Contact from 'components/pages/Contact';
+import Skills from 'components/pages/Skills';
 import Projects from 'components/pages/Projects';
 import React, { useState } from 'react';
 import './styles/global.scss';
@@ -22,7 +22,7 @@ function App() {
       <About />
       <Career />
       <Projects />
-      <Contact />
+      <Skills />
     </div>
   );
 }

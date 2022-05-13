@@ -1,0 +1,26 @@
+@import 'styles/colors.scss';
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+
+.grid-item {
+    margin: 1em;
+    padding: 1em;
+    background-color: $tertiary-light;
+    filter:brightness(0.5);
+
+    &:hover{
+        filter:brightness(1);
+       // transform: translateY(-1em);
+        transition:all 0.2s ease-in-out !important;
+        border-radius: 50%;
+    }
+
+    > img {
+        width: 2em;
+        height: 2em;
+    }
+}

@@ -63,10 +63,10 @@ function NavBar({ sideBarHandler }) {
           </Button>
         </div>
         <div className="am-navbar__option">
-          <Button handler={() => navigateTo('contact-page')}>
+          <Button handler={() => navigateTo('skills-page')}>
             <>
               <span className="nav-option-number">04.</span>
-              <span className="nav-option-text">&nbsp;Contact</span>
+              <span className="nav-option-text">&nbsp;Skills</span>
             </>
           </Button>
         </div>

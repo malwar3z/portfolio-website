@@ -1,0 +1,36 @@
+@import "styles/colors.scss";
+
+.job-card{
+    background-color: $secondary-dark;
+    height: 50vh;
+    // width: 50vw;
+    padding: 1em;
+    animation: scaleOut 0.5s forwards;
+
+    &--selection{
+       animation: scaleIn 0.5s forwards;
+    }
+     
+
+    @keyframes scaleIn {
+        from {
+            transform: scale(1);
+            filter: blur(1px);
+        }
+        to {
+            transform: scale(0.8);
+            filter: blur(10px);
+        }
+      }
+    
+      @keyframes scaleOut {
+        from {
+            transform: scale(0.8);
+            filter: blur(10px);
+        }
+        to {
+            transform: scale(1);
+            filter: blur(0px);
+        }
+      }
+}

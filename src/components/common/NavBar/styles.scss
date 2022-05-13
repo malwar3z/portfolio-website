@@ -26,12 +26,22 @@
     }
 
     &__logo {
+        animation: rotation 5s infinite linear;
         color: $tertiary-light;
         margin-left: 1em;
         
         > svg {
             font-size: 32px;
         }
+
+        @keyframes rotation {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(359deg);
+            }
+          }
     }
 
     &__quick-menu {
@@ -69,3 +79,4 @@
     font-size: 0.6em;
     color: $tertiary-light;
 }
+

@@ -1,0 +1,6 @@
+#create skill page
+#populate contact page
+
+#Refactor code for reusability
+#Add to contact stick icon buttons for Email + GitHub + Linkedin
+#example https://brittanychiang.com/
